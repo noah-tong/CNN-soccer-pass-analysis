@@ -53,4 +53,6 @@ The CNN model adopts ResNet-50 as the backbone network and performs binary class
 
 Grad-CAM visualizations indicate that the trained CNN consistently attends to tactically meaningful regions, including key passing corridors, dense defender clusters, and high-pressure zones around the passer. This suggests that the model is learning interpretable spatial patterns aligned with real tactical decision-making.
 
+<img width="3179" height="4494" alt="你的段落文字" src="https://github.com/user-attachments/assets/33102dcb-adcf-4383-99aa-e29b973de182" />
+
 
