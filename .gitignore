@@ -1,0 +1,32 @@
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large / generated — do not push to GitHub (use Releases or Zenodo)
+*.h5
+*.hdf5
+
+# Processed data (often large; place locally after clone)
+merged_matches*.xlsx
+graduation_thesis_test.xlsx
+
+# Optional: omit image dataset from git (uncomment if repo size matters)
+# image/
