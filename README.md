@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 # Modeling Tactical Value of Football Passes with CNN
 
 This project is my Master’s thesis completed at Utrecht University (Applied Data Science, 2024), in cooperation with Forward Football BV. The project focuses on identifying whether a football pass is tactically valuable by combining spatial situational images with Convolutional Neural Networks (CNN), rather than relying solely on traditional numerical features.
@@ -54,71 +53,4 @@ The CNN model adopts ResNet-50 as the backbone network and performs binary class
 
 Grad-CAM visualizations indicate that the trained CNN consistently attends to tactically meaningful regions, including key passing corridors, dense defender clusters, and high-pressure zones around the passer. This suggests that the model is learning interpretable spatial patterns aligned with real tactical decision-making.
 
-=======
-# 毕业论文 · CNN / ResNet 传球价值分类
-=======
-# Thesis Project: CNN / ResNet Pass Value Classification
->>>>>>> 2139c59 (Refactor thesis repository into a clean, English-first structure for GitHub sharing.)
 
-This repository contains the thesis workflow for football pass-value classification using:
-
-- CNN models (including ResNet50)
-- baseline ML models (Random Forest, XGBoost)
-- explainability methods (SHAP, Grad-CAM)
-
-## Repository Structure
-
-```text
-graduation-thesis-cnn/
-|- README.md
-|- requirements.txt
-|- .gitignore
-|- notebooks/
-|  |- 01_data_preparation.ipynb
-|  |- 02_labeling_and_baselines.ipynb
-|  |- 03_frame_visualization.ipynb
-|  |- 04_cnn_modeling.ipynb
-|  |- 05_results_and_reports.ipynb
-|  `- archive/
-|- image/                    # sample images only (3 PNG files)
-|- figures/                  # report figures and plots
-|- models/                   # local model weights (ignored by git)
-|- data/
-|  `- README.md              # data placement instructions
-`- label_annotation_sample (1).csv
-```
-
-## Quick Start
-
-1. Create an environment and install dependencies:
-
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-2. Place required large data files in the repository root (details in `data/README.md`).
-
-3. Launch Jupyter from the repository root and run notebooks in order:
-
-- `notebooks/01_data_preparation.ipynb`
-- `notebooks/02_labeling_and_baselines.ipynb`
-- `notebooks/03_frame_visualization.ipynb`
-- `notebooks/04_cnn_modeling.ipynb`
-- `notebooks/05_results_and_reports.ipynb`
-
-## GitHub Notes
-
-- Model files (`*.h5`, `*.hdf5`) are excluded by default.
-- Large processed spreadsheets are excluded by default.
-- Only three sample images are included in `image/` for lightweight sharing.
-
-<<<<<<< HEAD
-如对外公开，请自行补充 `LICENSE`（与学校/导师要求一致）。
->>>>>>> ee0a5bd (Initial commit: thesis CNN pipeline layout and cleaned main notebook)
-=======
-## License
-
-Add a `LICENSE` file based on your university or supervisor requirements before public release.
->>>>>>> 2139c59 (Refactor thesis repository into a clean, English-first structure for GitHub sharing.)
