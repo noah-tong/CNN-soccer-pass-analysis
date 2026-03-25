@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modeling Tactical Value of Football Passes with CNN
 
 This project is my Master’s thesis completed at Utrecht University (Applied Data Science, 2024), in cooperation with Forward Football BV. The project focuses on identifying whether a football pass is tactically valuable by combining spatial situational images with Convolutional Neural Networks (CNN), rather than relying solely on traditional numerical features.
@@ -55,50 +56,69 @@ Grad-CAM visualizations indicate that the trained CNN consistently attends to ta
 
 =======
 # 毕业论文 · CNN / ResNet 传球价值分类
+=======
+# Thesis Project: CNN / ResNet Pass Value Classification
+>>>>>>> 2139c59 (Refactor thesis repository into a clean, English-first structure for GitHub sharing.)
 
-足球比赛传球数据与球场截图，结合 **CNN（含 ResNet50）**、传统机器学习（Random Forest、XGBoost 等）与可解释性分析（SHAP、Grad-CAM 等）的完整实验流程。
+This repository contains the thesis workflow for football pass-value classification using:
 
-## 仓库结构
+- CNN models (including ResNet50)
+- baseline ML models (Random Forest, XGBoost)
+- explainability methods (SHAP, Grad-CAM)
+
+## Repository Structure
 
 ```text
 graduation-thesis-cnn/
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── notebooks/
-│   ├── main_pipeline.ipynb   # 主实验（由原 final_test 整理，已清空输出、便于 Git）
-│   └── archive/              # 早期草稿 notebook（test / test-2），一般不必再跑
-├── image/                    # 传球截图数据集（约 5000+ 张）
-├── figures/                  # 论文用图（从原工程根目录汇总的 PNG）
-├── models/                   # 本地训练得到的 .h5 权重（默认被 git 忽略）
-├── data/
-│   └── README.md             # 大数据文件放置说明
-└── label_annotation_sample (1).csv
+|- README.md
+|- requirements.txt
+|- .gitignore
+|- notebooks/
+|  |- 01_data_preparation.ipynb
+|  |- 02_labeling_and_baselines.ipynb
+|  |- 03_frame_visualization.ipynb
+|  |- 04_cnn_modeling.ipynb
+|  |- 05_results_and_reports.ipynb
+|  `- archive/
+|- image/                    # sample images only (3 PNG files)
+|- figures/                  # report figures and plots
+|- models/                   # local model weights (ignored by git)
+|- data/
+|  `- README.md              # data placement instructions
+`- label_annotation_sample (1).csv
 ```
 
-## 快速开始
+## Quick Start
 
-1. **创建环境**（示例使用 venv）：
+1. Create an environment and install dependencies:
 
-   ```bash
-   python -m venv .venv
-   .venv\Scripts\activate
-   pip install -r requirements.txt
-   ```
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+```
 
-2. **准备数据**  
-   将 `merged_matches_plus.xlsx` 放到**本仓库根目录**。说明见 [`data/README.md`](data/README.md)。
+2. Place required large data files in the repository root (details in `data/README.md`).
 
-3. **运行主流程**  
-   在仓库根目录启动 Jupyter，打开 `notebooks/main_pipeline.ipynb`。  
-   第一个代码单元会根据当前工作目录自动切换到仓库根，保证 `image/` 与数据路径与原先一致。
+3. Launch Jupyter from the repository root and run notebooks in order:
 
-## 关于 GitHub
+- `notebooks/01_data_preparation.ipynb`
+- `notebooks/02_labeling_and_baselines.ipynb`
+- `notebooks/03_frame_visualization.ipynb`
+- `notebooks/04_cnn_modeling.ipynb`
+- `notebooks/05_results_and_reports.ipynb`
 
-- **不要提交** `*.h5` / 超大 `*.xlsx`（已在 `.gitignore` 中排除）。权重可放在 [GitHub Releases](https://docs.github.com/repositories/releasing-projects-on-github)、网盘或 [Zenodo](https://zenodo.org/) 等。
-- 若仍觉得仓库过大，可在 `.gitignore` 中取消注释 `# image/` 行，改为单独发布图像压缩包。
+## GitHub Notes
 
-## 许可证
+- Model files (`*.h5`, `*.hdf5`) are excluded by default.
+- Large processed spreadsheets are excluded by default.
+- Only three sample images are included in `image/` for lightweight sharing.
 
+<<<<<<< HEAD
 如对外公开，请自行补充 `LICENSE`（与学校/导师要求一致）。
 >>>>>>> ee0a5bd (Initial commit: thesis CNN pipeline layout and cleaned main notebook)
+=======
+## License
+
+Add a `LICENSE` file based on your university or supervisor requirements before public release.
+>>>>>>> 2139c59 (Refactor thesis repository into a clean, English-first structure for GitHub sharing.)

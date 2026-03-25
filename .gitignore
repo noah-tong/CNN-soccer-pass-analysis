@@ -20,7 +20,7 @@ env/
 .DS_Store
 Thumbs.db
 
-# Large / generated — do not push to GitHub (use Releases or Zenodo)
+# Large / generated - do not push to GitHub (use Releases or Zenodo)
 *.h5
 *.hdf5
 
